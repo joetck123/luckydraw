@@ -1,0 +1,283 @@
+body
+{
+    font-family: arial;
+	background-image:url("https://static.wixstatic.com/media/2c89bb_088a8ff2dd9f4f15b55bf0d23dc05cc9~mv2.jpg") !important;
+	  background-repeat: no-repeat !important;
+	    background-size: cover !important;
+	
+}
+#background{
+margin-left: calc((100% - 980px) / 2);
+width:980px;
+background-color:rgba(0,0,0,0.4);
+margin-top:10px;
+
+}	
+/* Sets the background image for the wheel */
+.img{
+position:absolute;
+z-index:2;
+margin-top:-75px;
+}
+
+#canvas{
+    position:relative;
+    z-index:1;
+}
+
+td.the_wheel
+{
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: none;
+	position:absolute;
+}
+
+.pw1
+{
+    background-color: #6fe8f0;
+}
+
+.pw2
+{
+    background-color: #86ef6f;
+}
+
+.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+*, *:before, *:after {
+	 box-sizing: border-box;
+}
+ body {
+	 height: 100vh;
+	 background: #ccc;
+	 overflow: hidden;
+}
+.modal-content{
+border:none !important;
+-webkit-animation: zoom 1s; /* Chrome, Safari, Opera */
+animation: zoom 1s;
+animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes zoom {
+    from {
+    	-webkit-transform: scale(1,1);
+    }
+    to {
+    	-webkit-transform: scale(1.1,1.1);
+    }
+}
+
+/* Standard syntax */
+@keyframes zoom {
+   from {
+        transform: scale(1,1);
+   }
+   to {
+        transform: scale(1.2,1.2);
+   }
+}
+
+.modal-content p{
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size:20px;
+  font-family:Arial;
+  font-weight: 850;
+  text-align:center;
+  margin-top:-20px;
+    transform: scale(1, 1.5);
+}
+#prize{
+  color:white;
+  font-size:20px;
+  font-family:Arial;
+  font-style:italic;
+  text-align:center;
+  display: block;
+  text-align: center;
+  max-width:340px;
+  margin-left:80px;
+  margin-right:80px;
+  margin-top:50px;
+  
+}
+.modal-content h1{
+  font-size:35px;
+  font-weight: 850;
+  font-family:Arial;
+  text-align: center;
+  color: #FDE08D;
+  margin-top:-10px;
+}
+h1#codenumber{
+	background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  
+}
+ .modal-container {
+
+	 margin: 60px auto;
+	 padding-top: 0px;
+	 position: relative;
+	 width: 160px;
+}
+ .modal-container .modal-btn {
+	 display: block;
+	 margin: 0 auto;
+	 color: #fff;
+	 width: 160px;
+	 height: 50px;
+	 line-height: 50px;
+	 background: #446cb3;
+	 font-size: 22px;
+	 border: 0;
+	 border-radius: 3px;
+	 cursor: pointer;
+	 text-align: center;
+	 box-shadow: 0 5px 5px -5px #333;
+	 transition: background 0.3s ease-in;
+}
+ .modal-container .modal-btn:hover {
+	 background: #365690;
+}
+ .modal-container .modal-content, .modal-container .modal-backdrop {
+	 height: 0;
+	 width: 0;
+	 opacity: 0;
+	 visibility: hidden;
+	 overflow: hidden;
+	 cursor: pointer;
+	 transition: opacity 0.2s ease-in;
+}
+ .modal-container .modal-close {
+	 color: #aaa;
+	 position: absolute;
+	 right: 5px;
+	 top: 5px;
+	 padding-top: 3px;
+	 background: #fff;
+	 font-size: 16px;
+	 width: 25px;
+	 height: 25px;
+	 font-weight: bold;
+	 text-align: center;
+	 cursor: pointer;
+}
+ .modal-container .modal-close:hover {
+	 color: #333;
+}
+ .modal-container .modal-content-btn {
+	 position: absolute;
+	 text-align: center;
+	 cursor: pointer;
+	 bottom: 20px;
+	 right: 30px;
+	 background: red;
+	 color: white;
+	 width: 50px;
+	 border-radius: 2px;
+	 font-size: 14px;
+	 height: 32px;
+	 font-weight: normal;
+}
+ .modal-container .modal-content-btn:hover {
+	 color: white;
+	 background: black;
+}
+ .modal-container #modal-toggle {
+	 display: none;
+}
+ .modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
+	 background-color: rgba(0, 0, 0, 0.6);
+	 width: 100vw;
+	 height: 100vh;
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 z-index: 9;
+	 visibility: visible;
+	 opacity: 1;
+	 transition: opacity 0.2s ease-in;
+}
+ .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+	 opacity: 1;
+	 background-color: rgba(0, 0, 0, 0) !important;
+	 background-image: url('popup.png');
+	 max-width: 500px;
+	 width: 500px;
+	 height: 500px;
+	 padding: 10px 30px;
+	 position: fixed;
+	 left: calc(50% - 200px);
+	 top: 12%;
+	 z-index: 999;
+	 pointer-events: auto;
+	 cursor: auto;
+	 visibility: visible;
+	 
+}
+ @media (max-width: 400px) {
+	 .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+	left: 0;
+	}
+	.col-sm-6{
+	
+	margin-left:-18px;
+	}
+	.col-sm-6 img{	
+	max-width:390px;
+	}
+	#canvas{
+	max-width:390px;
+	margin-top:-10px;
+	}
+	#background{
+margin-left: calc((100% - 400px) / 2);
+width:400px;
+background-color:rgba(0,0,0,0.4);
+
+}
+.modal-content{
+margin-left:-45px;
+}
+@-webkit-keyframes zoom {
+    from {
+    	-webkit-transform: scale(0.6,0.6);
+    }
+    to {
+    	-webkit-transform: scale(0.8,0.8);
+    }
+}
+
+/* Standard syntax */
+@keyframes zoom {
+   from {
+        transform: scale(0.6,0.6);
+   }
+   to {
+        transform: scale(0.8,0.8);
+   }
+}
+}
+ 
